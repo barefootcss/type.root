@@ -1,0 +1,29 @@
+// 
+// Declarations  
+// ========================================================================== 
+
+// 
+// Defaults:
+// 
+
+$bare-root-font-family:			"Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
+$bare-root-color: 				#222 !default;
+$bare-root-background-color:	#fff !default;
+
+/* 
+   #root
+   ========================================================================== */
+
+/**
+ * The root module defines the root-level styles.
+ */
+
+html {
+	font-family: $bare-root-font-family;
+	font-size: bareEm($bare-fz-m, 16px);
+	line-height: $bare-sp-m / $bare-fz-m;
+	color: $bare-root-color;
+	background-color: $bare-root-background-color;
+	overflow-y: scroll;
+	min-width: 100%;
+}
