@@ -21,7 +21,7 @@ $bare-root-background-color:	#fff !default;
 html {
 	font-family: $bare-root-font-family;
 	font-size: bareEm($bare-fz-m, 16px);
-	line-height: $bare-sp-m / $bare-lh-m;
+	line-height: $bare-lh-m / $bare-fz-m;
 	color: $bare-root-color;
 	background-color: $bare-root-background-color;
 	overflow-y: scroll;
