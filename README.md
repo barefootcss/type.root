@@ -6,7 +6,7 @@ The `root` module provides basic styling for the root element.
 
 Install using Bower:
 
-	$ bower --save bare-root
+	$ bower install --save bare-root
 
 Import into project:
 
