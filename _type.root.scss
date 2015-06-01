@@ -29,3 +29,7 @@ html {
 	-webkit-text-size-adjust: none;
 	-ms-text-size-adjust: 100%;
 }
+
+body {
+	max-width: $bare-page-max-width;
+}
