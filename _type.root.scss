@@ -30,6 +30,11 @@ html {
 	-ms-text-size-adjust: 100%;
 }
 
+/**
+ * Restrain width on wide resolutions.
+ */
+ 
 body {
 	max-width: $bare-page-max-width;
+	margin: 0 auto;
 }
