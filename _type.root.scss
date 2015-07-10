@@ -9,6 +9,9 @@
 $bare-root-font-family:			"Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
 $bare-root-color: 				#222 !default;
 $bare-root-background-color:	#fff !default;
+$bare-root-fz-xs:				$bare-fz-xs;
+$bare-root-fz-s:				$bare-fz-s;
+$bare-root-fz-m:				$bare-fz-m;
 
 /* 
    #root
@@ -20,7 +23,7 @@ $bare-root-background-color:	#fff !default;
 
 html {
 	font-family: $bare-root-font-family;
-	font-size: bareEm($bare-fz-m, 16px);
+	font-size: bareEm($bare-root-fz-xs, 16px);
 	line-height: $bare-lh-m / $bare-fz-m;
 	color: $bare-root-color;
 	background-color: $bare-root-background-color;
@@ -30,8 +33,24 @@ html {
 	-ms-text-size-adjust: 100%;
 }
 
+@media (min-width: bareMedia($bare-bp-s)) {
+	
+	html {
+		font-size: bareEm($bare-root-fz-s, 16px);
+	}	 
+
+}
+
+@media (min-width: bareMedia($bare-bp-m)) {
+
+	html {
+		font-size: bareEm($bare-root-fz-m, 16px);
+	}
+
+}
+
 /**
- * Restrain width on wide resolutions.
+ * Prevent overstretching on wide displays.
  */
  
 body {
