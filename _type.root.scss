@@ -50,6 +50,17 @@ html {
 }
 
 /**
+ * Fixes font inheritance issue.
+ */
+ 
+table, caption {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-variant: inherit;
+}
+
+/**
  * Prevent overstretching on wide displays.
  */
  
